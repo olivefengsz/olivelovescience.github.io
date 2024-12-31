@@ -10,25 +10,11 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/bMa1X1WHfopnPJwjRsPKmJhUV91M6Ae9f73vUQCh6AJfddCHr0RuWXfb2icJNhbPNiaLMFJkNGyLic8lmpKibgh6KQ/0?wx_fmt=jpeg)
-
-#  微积分核心概念“线性近似”概念演化过程解读之一
-
-
-__ _ _ _ _
-
-**一，线性近似问题的由来**
+<meta name="description" content="**一，线性近似问题的由来**
 
 微积分这座数学大厦建造的过程主要是为了回答好一个问题：什么是线性近似？线性近似是从何而来呢？这还要从第二次数学危机说起。">
 <meta property="og:title" content="微积分--微积分核心概念“线性近似”概念演化过程解读之一">
-<meta property="og:description" content="![cover_image](https://mmbiz.qpic.cn/mmbiz_jpg/bMa1X1WHfopnPJwjRsPKmJhUV91M6Ae9f73vUQCh6AJfddCHr0RuWXfb2icJNhbPNiaLMFJkNGyLic8lmpKibgh6KQ/0?wx_fmt=jpeg)
-
-#  微积分核心概念“线性近似”概念演化过程解读之一
-
-
-__ _ _ _ _
-
-**一，线性近似问题的由来**
+<meta property="og:description" content="**一，线性近似问题的由来**
 
 微积分这座数学大厦建造的过程主要是为了回答好一个问题：什么是线性近似？线性近似是从何而来呢？这还要从第二次数学危机说起。">
 <meta property="og:type" content="article">
@@ -91,10 +77,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ce50dbecab8efbd97b42c0dbfd112812b90b55c242affa3b0ae83564470f749f/68747470733a2f2f6d6d62697a2e717069632e636e2f6d6d62697a5f6a70672f624d613158315748666f706e504a776a5273504b6d4a68555639314d36416539663733765551436836414a666464434872305275575866623269634a4e6862504e69614c4d464a6b4e47794c6963386c6d704b69626768364b512f303f77785f666d743d6a706567"><img src="https://camo.githubusercontent.com/ce50dbecab8efbd97b42c0dbfd112812b90b55c242affa3b0ae83564470f749f/68747470733a2f2f6d6d62697a2e717069632e636e2f6d6d62697a5f6a70672f624d613158315748666f706e504a776a5273504b6d4a68555639314d36416539663733765551436836414a666464434872305275575866623269634a4e6862504e69614c4d464a6b4e47794c6963386c6d704b69626768364b512f303f77785f666d743d6a706567" alt="cover_image" data-canonical-src="https://mmbiz.qpic.cn/mmbiz_jpg/bMa1X1WHfopnPJwjRsPKmJhUV91M6Ae9f73vUQCh6AJfddCHr0RuWXfb2icJNhbPNiaLMFJkNGyLic8lmpKibgh6KQ/0?wx_fmt=jpeg" style="max-width: 100%;"></a></p>
-<h1>微积分核心概念“线性近似”概念演化过程解读之一</h1>
-<hr>
-<p><strong>一，线性近似问题的由来</strong></p>
+<div class="markdown-body" id="postBody"><p><strong>一，线性近似问题的由来</strong></p>
 <p>微积分这座数学大厦建造的过程主要是为了回答好一个问题：什么是线性近似？线性近似是从何而来呢？这还要从第二次数学危机说起。</p>
 <p>在开普勒的时代，他提出了著名的日心说理论，其中有一个理论是说：在相同时间内，地球绕太阳扫过的面积是相等的。由于在一定时间范围内地球绕太阳扫过的平面是不规则形状的，这时就需要能够计算这种曲面的面积。但是曲面要如何计算面积呢？我们会计算面积的图形只有一些规则的平面，像矩形，三角形的面积，那么可以将曲面切分成一个个小矩形，这样就可以通过小矩形面积之和来近似得到曲面的面积。</p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/546157c57ae095973e3f1847185e73d5295628b2feaa886e7dac68864af03ae3/68747470733a2f2f6d6d62697a2e717069632e636e2f6d6d62697a5f706e672f624d613158315748666f706e504a776a5273504b6d4a68555639314d364165394e6850536a6f6963756a334f4e6c6172477a766145506e6832425245376e754b68696255613862744f7362306d4e75494b7463436e5a65412f3634303f77785f666d743d706e672666726f6d3d6170706d7367"><img src="https://camo.githubusercontent.com/546157c57ae095973e3f1847185e73d5295628b2feaa886e7dac68864af03ae3/68747470733a2f2f6d6d62697a2e717069632e636e2f6d6d62697a5f706e672f624d613158315748666f706e504a776a5273504b6d4a68555639314d364165394e6850536a6f6963756a334f4e6c6172477a766145506e6832425245376e754b68696255613862744f7362306d4e75494b7463436e5a65412f3634303f77785f666d743d706e672666726f6d3d6170706d7367" alt="" data-canonical-src="https://mmbiz.qpic.cn/mmbiz_png/bMa1X1WHfopnPJwjRsPKmJhUV91M6Ae9NhPSjoicuj3ONlarGzvaEPnh2BRE7nuKhibUa8btOsb0mNuIKtcCnZeA/640?wx_fmt=png&amp;from=appmsg" style="max-width: 100%;"></a></p>
